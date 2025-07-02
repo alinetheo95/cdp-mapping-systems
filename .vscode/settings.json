@@ -10,5 +10,20 @@
   "notebook.formatOnSave.enabled": true,
   "notebook.formatOnCellExecution": true,
   // this is extra but will help
-  "notebook.diff.ignoreMetadata": true
+  "notebook.diff.ignoreMetadata": true,
+  "[python]": {
+     "editor.formatOnType": true,
+     "editor.defaultFormatter": "ms-python.black-formatter",
+     "editor.formatOnSave": true
+ },
+ "[jupyter]": {
+     "editor.defaultFormatter": "ms-python.black-formatter"
+ },
+ "notebook.lineNumbers": "on",
+ "ruff.importStrategy": "useBundled",
+ "black-formatter.importStrategy": "fromEnvironment",
+ "notebook.formatOnSave.enabled": true,
+ "black-formatter.showNotifications": "always",
+ "notebook.formatOnCellExecution": true,
+ "notebook.diff.ignoreMetadata": true,
 }
