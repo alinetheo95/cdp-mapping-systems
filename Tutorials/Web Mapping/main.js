@@ -60,3 +60,12 @@ map.on('load', () => {
     })
     .catch((error) => console.error("Error fetching data:", error));
 });
+
+    map.on("click", "restaurants-layer", (e) => {
+      const coordinates = e.features[0].geometry.coordinates.slice();
+      const description = e.features[0].properties.dba
+      new maplibregl.Popup()
+        .setLngLat(coordinates)
+        .setHTML(description)
+        .addTo(map);
+    });
